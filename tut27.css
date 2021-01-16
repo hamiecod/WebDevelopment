@@ -1,0 +1,45 @@
+/* z-index decides the stacking of the elements over one another
+z-index in other words controls which element will overlap the other
+z-index only works on position: relative, absolute, fixed and sticky
+*/
+
+.box{
+    width: 170px;
+    height: 170px;
+    border: 2px solid black;
+}
+
+#box1{
+    background-color: red;
+    position: relative;
+    top: 74px;
+    z-index: 100;
+}
+
+#box2{
+    background-color: green;
+    /* the default value of visibility is 'visible'.. it makes the thing visible */
+    /* when you type the property all the values available are shown by emmet */
+    /* visibility: hidden;hides the particular thing */
+    /* when it is hidden the area covered by it is not collapsed */
+
+    position: relative;
+    top: 1px;
+    /* by this, the box2 will overlap box1 */
+    /* if we want that box1 should overlap box2, then we need to define the z-index of box2 less than the z-index of box1 */
+    z-index: 1;
+    /* by using the above command the z-index of box2 is less than the z-index of box1.... so the box1 would overlap the box2
+    */
+}
+
+#box3{
+    background-color: blue;
+    /* display: none; */
+    /* it does not display the element at all */
+    /* it is different from visibility: hidden; as in visibility:hidden; the space covered by the element is not collapsed whereas in display:none; even the space covered by the element is collapsed */
+    /* z-index is used in social media websites in which sometimes you have to stack one chat over another */
+}
+
+#box4{
+    background-color: yellow;
+}

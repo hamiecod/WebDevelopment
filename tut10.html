@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ids and classes in HTML</title>
+</head>
+<body>
+    <!-- ids are unique names assigned to elements.... they can be related to the naming system of people -->
+    <!-- but there are some animals which do not have names but still exist... that is the same with tags -->
+    <!-- ids are helpful in CSS... if i want to assign a color to an element having a particular id, i would not need to look for it in thousands of lines of code.. i would just tell CSS to apply color to element have the particular id -->
+    <!-- id is an unique name so there cannot be multiple ids with the same name -->
+
+    <!-- a class is like a class of students in which if a class is getting apples and milkshake that means everyone part of that class will get the same -->
+    <!-- there can only be one student with a particular id but there can be many students in the same class -->
+    <!-- if i want everyone in a class to wear blue i would say that class A will wear blue which applies to all student is class A -->
+    <!-- if we relate it to HTML, if i want all the elements of class redBg to get color red and border black, i would just write to CSS to get those properties in each and every element of class redBg -->
+    <!-- it makes the work less tedious as we just need to write the command once rather that writing it thousand times -->
+    <!-- an element can have multiple classes seprated with a space -->
+    <!-- a class can have multiple elements -->
+
+    <h3>Ids and classes in HTML</h3>
+    <div id="mainBox" class="redBg blackBorder">
+        This is mainbox
+    </div>
+
+    <span class="redBg"></span>
+
+    <!-- using emmet to get ids and classes-->
+    <!-- . is for class and # is for id -->
+    <!-- syntax to get emmet class: element.class1.class2.class3 -->
+    <!-- syntax to get emmet id: element#id -->
+    <span class="redBg"></span>
+    <div id="mainBox"></div>
+
+    <!-- Emmet takes div tag as default -->
+    <!-- if you write: .blackBg -->
+    <!-- the result would be: <div class=blackBg></div> -->
+
+    <!-- creating multiple elements using Emmet -->
+    <!-- element.class1.class2.class3*4 will give 4 elements containing the class -->
+    <span class="class1 class2 class3">first</span>
+    <span class="class1 class2 class3">second</span>
+    <span class="class1 class2 class3">third</span>
+    <span class="class1 class2 class3">fourth</span>
+
+    <!-- we can define some properties of multiple elements having same class by triggering the particular class in CSS -->
+</body>
+</html>

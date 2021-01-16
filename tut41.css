@@ -1,0 +1,14 @@
+.grid{
+    display: grid;
+    grid-gap: 0.14rem;
+    grid-template-rows: 1fr 1fr 4fr;
+    /* this will only affect the number of rows defined to take the width */
+    grid-auto-rows: 2fr;
+    /* this property will define the specific height to rows which haven't been given a particular size */
+    grid-template-columns: 1fr 4fr 2fr;
+}
+
+.box{
+    background-color: rgb(255, 238, 238);
+    border: 2px solid red;
+}

@@ -1,0 +1,86 @@
+/*box model of css is the arrangement of an element and its properties in a webpage
+first the element comes, them the padding, then the border and then the margin
+it is really helpful in defining the area around an element
+it can be seen by using the inspect element in chrome*/
+
+/* '*' stands for universal element in CSS, in which all the default properties of all elements are defined */
+
+/*{
+    background-color: rgb(211, 79, 182) !important;
+    color: purple !important;
+    border: 3px solid purple !important;
+    border-radius: 23px !important;
+    padding: 10px !important;
+    margin: 12px !important;
+    height: 170px !important;
+    width: 500px !important;
+}*/
+
+/* *{
+    box-sizing: border-box;
+}*/
+
+body{
+    background-color: rgb(228, 149, 238);
+}
+
+#div1{
+    background-color: rgb(52, 161, 211);
+    color: maroon;
+    border: 3px solid rgb(250, 0, 154);
+    padding: 12px;
+    /*padding is the distance between the text and the border of an element in a webpage*/
+    margin: 20px;
+    /* margin is the distance between the border of two consecutive element */
+}
+
+/* we can also define the padding and margin separately for each side */
+
+#div2{
+    background-color: rgb(0, 255, 234);
+    color: rgb(76, 0, 92);
+    border: 4px solid brown;
+    padding-top: 4px;
+    padding-right: 12px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    /* the padding is defined for each side separately... this can also be done using one line of code */
+    margin-top: 12px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+#div3{
+    background-color: rgb(0, 255, 179);
+    color: crimson;
+    border: 3px solid rgb(111, 0, 255);
+
+    /* the padding and margin of every side separately can also be defined in only one line of code */
+    /* syntax: 'padding/margin: top right bottom left'||learn by clockwise order*/
+    padding: 4px 8px 16px 32px;
+    margin: 12px 14px 3px 32px;
+}
+
+#div4{
+    background-color: red;
+    color: yellowgreen;
+    border: 4px solid turquoise;
+    border-radius: 23px;
+    width: 500px;
+    height: 500px;
+    border-style: solid;
+    /*another way to write padding or margin:
+    padding/margin: x(top/bottom) y(right/left)*/
+    padding: 34px 19px;
+    margin: 14px 19px;
+    /* in this case, the padding for top and bottom || right and left would be same */
+    /* inspect element is used for live editing of website */
+    /* in inspect, the box model is shown with different colors */
+
+    /* when we increase the padding or margin of an element, the widht also changes and does not obey the width given manually to it */
+    /* so to solve this issue we use box sizing */
+    box-sizing: border-box;
+    /* this does not alter the width which is given, to make it correct it alters the height */
+    /* the only condition to use it is that the width must me defined manually */
+}

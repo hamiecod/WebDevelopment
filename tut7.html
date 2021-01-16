@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists and tables</title>
+</head>
+
+<body>
+    <!-- Lists are used to write different elements in a structured format -->
+    <!-- They are of two types: ordered and unordered -->
+
+    <!-- Unordered lists are the lists which are not numbered and just have bullets -->
+    <!-- It has only one attribute: type, which decides the type of bullet -->
+    <!-- 'type' has three values: squared, disc and circled -->
+    <ul type="squared">
+        <li>Apple</li><!--'li' stands for list item-->
+        <li>Orange</li>
+        <li>Cauliflower</li>
+        <li>Stationary:<!--It is list nesting: an ordered list in an unordered list-->
+            <ol type="a">
+                <li>Books</li>
+                <li>pencil</li>
+                <li>pen</li>
+            </ol>
+        </li>
+    </ul>
+
+    <!-- ordered list are the lists whose elements are numbered -->
+    <!-- it has two attributes: TYPE and START -->
+    <!-- type decides the type of bullet -->
+    <!-- start decides from where the list should start in terms of number -->
+    <ol type="I" start=4>
+        <li>Mouse</li>
+        <li>Keyboard</li>
+        <li>CPU:
+            <ul>
+                <li>HP</li>
+                <li>Asus</li>
+                <li>Acer</li>
+            </ul>
+        </li>
+        <li>Chair</li>
+    </ol>
+    <hr>
+    <hr>
+
+    <!-- Tables -->
+    <!-- A table is a collection of cells which have data stored in them -->
+    <h3>HTML Table</h3>
+    <table>
+        <thead><!--It is the heading row-->
+            <tr><!-- starting of a row in a table-->
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>Class</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody><!--It is the body of the table-->
+            <tr><!--It is the body row-->
+                <td>Aarav</td>
+                <td>101</td>
+                <td>6A</td>
+                <td>88</td>
+            </tr>
+
+            <tr>
+                <td>Armaan</td>
+                <td>102</td>
+                <td>6C</td>
+                <td>100</td>
+            </tr>
+
+            <tr>
+                <td>Hargun</td>
+                <td>103</td>
+                <td>6A</td>
+                <td>96</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

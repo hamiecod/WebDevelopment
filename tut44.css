@@ -1,0 +1,35 @@
+.container{
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-areas: 
+    'navbar navbar navbar navbar'
+    'section section section aside'
+    'footer footer footer footer';
+    /* this is like a matrix */
+    /* if one line is on 4 things others have to be same */
+    /* this makes work rlly ez */
+    /* it helps in designing layouts */
+}
+
+.item{
+    background-color: rgb(253, 236, 205);
+    border: 2px solid orange;
+    text-align: center;
+    padding: 8px;
+}
+
+#navbar{
+    grid-area: navbar;
+}
+
+#section{
+    grid-area: section;
+}
+
+#aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+}

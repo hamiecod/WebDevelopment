@@ -1,0 +1,10 @@
+p{
+    color: purple;
+    background-color: rosybrown;
+    font-style: italic;
+}
+
+.bgPrimary{
+    color: rgb(32, 0, 211);
+    background-color: rgb(12, 235, 205);
+}

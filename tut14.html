@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tutorial</title>
+    <link rel="stylesheet" href="tut14.css">
+    <!-- it links an external CSS file -->
+
+    <style>/*it is adding an internal CSS in head tag of HTML*/
+        p{
+            color: slateblue;
+            background-color: yellow;
+        }
+    </style>
+    <!-- if there are two different values defined for a particular property of a selector, the one mentioned after the first one will be given presidence -->
+    <!-- but when you write '!important' in CSS, that particular property will take presidence over other -->
+</head> 
+<body>
+    <h3>This is a CSS tutorial</h3>
+    <!-- in the paragraph, we will include inline CSS, which is the CSS added to the main HTML tag only -->
+    <!-- inline CSS is not preferred as it makes HTML messy, so internal and external CSS are more preferred -->
+    <p style="color: red; background-color: royalblue;">This tutorial teaches you all you need to know about HTML/CSS</p> 
+</body>
+</html>

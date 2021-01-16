@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Elements in HTML</title>
+</head>
+
+<body>
+    <h3>HTML Semantic Elements</h3>
+    <!--heading tags are also semantic tags, if its heading1 the engine lays more emphasis on it and ranks it when a particular URI is searched-->
+    <!-- semantics mean to give a keyword to a particular area of a webpage so that the SEO knows what is what  -->
+    <!-- it is not necessary but it makes our website rank good in SEO -->
+    <!-- in early times, there were no semantics, all the things were defined with the class of the <div> tag -->
+    <!-- for example: header, footer, article and navigation tags tell the browser that a particular area is a header which helps in ranking the website -->
+    <!-- semantic tags give identity to the tags which help SEO check their level -->
+    <details>
+        <summary>Hello Sir</summary>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident animi ratione ducimus, voluptate sit
+        cupiditate eum? Unde adipisci saepe corporis eum excepturi quasi voluptatum soluta blanditiis atque praesentium
+        illo, sint ullam commodi distinctio optio modi perferendis facere odio sapiente nihil. Quisquam molestiae,
+        excepturi quae assumenda sequi saepe iste ipsa unde non rerum labore dolore eaque perferendis enim quia
+        consequatur. Tenetur molestiae cum debitis repudiandae, nulla alias deserunt, totam praesentium, eius ratione
+        commodi! Perferendis deleniti iusto, architecto exercitationem eum corrupti ullam at maxime excepturi magnam
+        dolores? Vel odio pariatur sed dignissimos iusto fuga, perspiciatis facere odit reprehenderit quidem est sit
+        aliquam.
+    </details>
+    <hr>
+    <!-- the details tag makes a drow down arrow kind of thing in which summary is the heading and the other data is visible when the arrow is clicked -->
+
+    <!-- <article> tag is a semantic tag which which shows an article, its work is same as of a paragraph tag but it is used in SEO, the content can be copied from an article... it can be a user comment or a blog post -->
+
+    <article>It is an article semantic tag</article>
+    <article>it is another article sematntic tag</article>
+    <!-- the article tag is a block element -->
+
+    <aside>Hello! this tag contains more info about the above article</aside>
+    <!-- aside tags are tags which are not much important, then contain information indirectly related to the main content or sometimes advertisements -->
+    <hr>
+
+    <figure>
+        <!-- figure is a semantic tag which tells the SEO that it is an image -->
+        <center>
+            <img onmouseover="hello" width="200" height="120" src="https://source.unsplash.com/random" alt="error 404">
+            <figcaption>A random picture</figcaption>
+            <!--it is subtag of <figure> and is used to assign a caption to an image-->
+        </center>
+    </figure>
+    <hr>
+
+    <footer>
+        <!-- footer tag is a semantic tag which helps in the SEO of footers...... a footer commonly contains information about copyright, about or related links -->
+        <span>this is a footer</span>
+        <address title="best author in the world">Author: Hargunbeer Singh</address>
+        <!-- we write the information about the author in the address tags because if someone search the name of the author'John', chorme will search all the address elements and then rank the websites -->
+    </footer>
+    <hr>
+
+    <!-- the header semantic tag is used to contain introductory information such as logo, headings, author, search box, etc.  -->
+    <header>
+        This webpage contains many semantic tags
+    </header>
+    <hr>
+
+    <!-- the main tag contains the main content of the body tag which may contain the main statement of the body or a very important thing -->
+    <main>
+        this main tag is very important
+    </main>
+    <hr>
+
+    <mark>
+        <!-- the mark tag is used to highlight some relevant text from the content -->
+        yps yps
+        <!-- mark tag should not be used for syntax highlighting, instead span should be used for that using CSS -->
+    </mark>
+    <hr>
+
+    <!-- the navigation tag represents a section of the document which is used for navigation withing the website or the internet -->
+    <nav>
+        <ul>
+            <li>hello</li>
+            <li>howdy</li>
+            <li>bye</li>
+        </ul>
+    </nav>
+    <hr>
+
+    <!-- a section tag is used to define a section -->
+    <!-- if you want to separate the elements inside section, use article insted -->
+    <!-- section should be considered different from div -->
+    <section>this is a section tag</section>
+    <hr>
+
+    <!-- time tag is used to show particular time and datetime...... it also translates the time into machine readable code to rank in SEO -->
+    <!-- the machine readable code is the datetime code... the format is : year-month-date/ hour:minutes/ year:Wweeknumber-->
+    <!-- the time can directly also be referred, but in this way it helps in SEO -->
+    <!-- and if it is written in the datetime code.. then there are very high chances of ranking high in SEO -->
+    <!-- actually the main motive of using these tags is to rank high in SEO -->
+    <p>The meeting will take place on <time datetime="2020-11-04">4 November</time> at <time datetime="06:00">6am</time>
+    </p>
+    <hr>
+
+    <!-- if you want reference for more semantic tags: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time -->
+
+    <!--EXTRA INFO-->
+    <!-- if you want a title for particular content when it hovers over the content, we should use title tag -->
+    <span title="hovering title">this is a span containing title</span>
+    <hr>
+
+    <!-- the quote tag is used to write a quoted line -->
+    <q>Risk hai to ishq hai</q>
+    <hr>
+
+    <!-- when you need to write a more emphasized and separated text, use <blockquote> -->
+    <p>Bill gates is a nice person
+    <blockquote>he started coding at the age of 13 just as me</blockquote>
+    </p>
+    <hr>
+    <hr>
+
+    <!-- the small tag decreases the size of the content -->
+    <span><small>&copy;</small>/&copy;</span>
+    <hr>
+
+    <span>Cl<sub>2</sub></span>
+    <!-- sub tag is used to write the subscript -->
+    <!-- and sup tag is used to write super script -->
+    <span>&nbsp;&nbsp;&nbsp;Cl<sup>1-</sup></span>
+</body>
+<!-- html is not to be crammed.... you can use the resources on internet whenever you want -->
+</html>

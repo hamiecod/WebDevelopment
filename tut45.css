@@ -1,0 +1,88 @@
+/* CSS */
+
+.container {
+    display: grid;
+    grid-gap: 0.8rem;
+    grid-template-areas: 'nav nav nav nav' 
+    'section section section aside' 
+    'footer footer footer footer';
+}
+
+.item {
+    background-color: rgb(255, 204, 230);
+    border: 2px solid #fa3354;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+}
+
+section {
+    grid-area: section;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 300px) {
+    body {
+        background-color: red;
+    }
+    span{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    body {
+        background-color: orange;
+    }
+    .container {
+        grid-template-areas: 
+        'nav nav nav nav' 
+        'section section section section' 
+        'aside aside aside aside'
+        'footer footer footer footer';
+        /* we are altering the design of the webpage by firing media queries */
+    }
+    aside{
+        display: none;
+        /* in this size aside would not be shown */
+    }
+    span{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+    body {
+        background-color: yellow;
+    }
+    .container {
+        grid-template-areas: 
+        'nav nav nav nav' 
+        'section section section section'
+        'aside aside aside aside' 
+        'footer footer footer footer';
+        /* we are altering the grid design by firing media queries */
+    }
+    span{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        background-color: rgb(167, 255, 66);
+    }
+}

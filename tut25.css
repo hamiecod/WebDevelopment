@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap');
+
+/* CSS positions: static(default), relative, absolute, fixed, sticky */
+
+body{
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+.container{
+    border: 2px solid black;
+    background-color: rgb(148, 235, 186);
+    height: 3444px;
+}
+
+.box{
+    display: inline-block; /*the element will be in one line and we can also define the height and the widht*/
+    border: 2px solid red;
+    width: 150px;
+    height: 150px;
+    margin: 2px;
+}
+
+#box3{
+    /* relative position: it will move according to code with respect to its default position|| like 33px away from default position */
+    /* position: relative; */
+
+    /* absolute position: it moves according to code with respect to its highest parent|| like a box in a container will move 33px away from the border of the container  */
+    /* position: absolute;
+    top: 32px;
+    left: 32px; */
+
+    /* static position is the default position */
+
+    /* sticky position is the position in which a box will always stay where it is defined.. as it names it wont move  */
+    /* position: sticky; */
+
+    /* fixed position is the position in which the box will move as the user will scroll down */
+    position: fixed;
+    /* if no value is defined it will overlap the next box */
+    bottom: 3px;
+    right: 2px;
+}

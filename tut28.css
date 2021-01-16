@@ -1,0 +1,42 @@
+ /* flexbox helps in making and aligning the layout of an element or a webpage
+ flexbox= flexible+box 
+
+ flexbox terms are as follows:
+1) horizontal axis= main axis
+2) vertical axis= cross axis
+3) horizontal axis start: main start
+4) horizontal axis end: main end
+5) vertical axis start: cross end
+6) vertical axis end: cross end
+7)flex item
+8)flex container
+9)size of the flex item: main size
+a box can be made flex container by 'display:flex'  */
+
+.container{
+    height: 544px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    /* initializing the container as flex box */
+
+    /* yeh sabhi display ka raja hai
+    it has also has the qualities of display: inline-block;
+    it can do anything */
+
+    /* flex properites for flex container */
+    flex-direction: row;/*sets the direction of the flex items... flex direction by default is row*/
+    flex-direction: column;/*aligns the flex items in horizontal way*/
+    flex-direction: row-reverse;/*sets all elements in row from right side.... inverted row... row will start from right*/
+}
+
+.item{
+    /* these will become flex items when the display of their parent(container) is set to be flex */
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 218, 218);
+    border: 2px solid red;
+    margin: 10px;
+    padding: 3px;
+    color: brown;
+}

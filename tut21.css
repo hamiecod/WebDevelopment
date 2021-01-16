@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+*{
+    box-sizing: border-box;
+    /* it gives a rule that the width should not be modified */
+}
+
+body{
+    font-family: 'Architects Daughter', cursive;
+}
+
+.container{
+    border: 3px solid purple;
+    width:900px;
+    /*margin:auto;if only one value is given it is considered to be x*/
+    /* actually it sets the same width on both the sides of the element */
+    margin: 33px auto;
+    background-color: rgb(255, 230, 208);
+}
+
+.item{
+    border: 3px solid gray;
+    margin: 12px 3px;
+    padding: 12px 3px;
+    /* margin/padding: y x; */
+    background-color: rgb(248, 236, 236);
+}
+
+#fruit{
+    float:left;/*sets the alignment to left*/
+    width:48%;
+}
+
+#computer{
+    float: right;
+    width: 48%;
+}
+
+/* the elements may overlap each other */
+#stationary{
+    /* float: left; */
+    width: 99.3%;
+    /* there is a property to stop the overlapping */
+    /* clear: left;it says that no element which is left aligned is allowed to overlap me */
+    /* clear: right; is used to unoverlap the right aligned elements */
+    clear: both; /*it unoverlaps all the elements, whether left or right aligned*/
+    /* when another para or element is added after it it will come below it */
+}
+/* when all elements' float is set to left all will come on left side and container will be collapsed */
+
+p, h3{
+    /* text-align: right;aligns the text to the right */
+    /* text-align: left;aligns the text to the left */
+    /* text-align: justify;/*justifies the text */
+    text-align: center;/*aligns the text to the center */
+}
+
+h1{
+    margin: auto;
+    width: 355px;
+}

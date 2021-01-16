@@ -1,0 +1,62 @@
+#firstPara{
+    background-color: red;/*sets the background color to red*/
+    height: 100px;/*sets the height to 100 pixels*/
+    width: 455px;/*sets the width to 455 pixels*/
+    border-color: green;/*sets the border color to green*/
+    border-style: solid;/*this is the property to show the border as solid color and without it nothing would be visible*/
+    border-radius: 11px;/*it sets the curvature of the corner of the border*/
+    border-width: 4px;/*it sets the width of the border*/
+}
+
+/*in the above written code, it takes a lot of time to define all the properties of border one by one... it can be done in a single command*/
+
+#secondPara{
+    background-color: seagreen;
+    border: 2px solid purple;
+    height: 100px;
+    width: 455px;
+    /*this way of defining the border makes it a lot easier and saves time
+    syntax: border: width style color;
+    */
+}
+
+#thirdPara{
+    background-color: rgb(255, 0, 221);
+    height: 100px;
+    width: 455px;
+    /*we can also customise different sides of a border separately*/
+    border-top: saddlebrown;
+    border-right: slateblue;
+    border-left: yellow;
+    border-bottom: turquoise;
+    border-width: 4px;
+    border-style: solid;
+    /*we can also customise the radius of each side separately*/
+    border-top-right-radius: 11px;/*changes the curvature of the top right corner of the border*/
+    border-top-left-radius: 17px;/*changes the curvature of the top left corner of the border*/
+    border-bottom-right-radius: 21px;/*changes the curvature of the bottom right corner of the border*/
+    border-bottom-left-radius: 27px;/*changes the curvature of the bottom left corner of the border*/
+}
+
+#fourthPara{
+    background-image: url('https://lh3.googleusercontent.com/-Fwa8arxLkeM/X1HTyjAwG-I/AAAAAAAAAuA/gEJ9JqCP7GIb8QVYg81qBQcfU1BCJhDawCEwYBhgLKtMDAL1Ocqx-s0qXz-kHTzy_zOjQUEojmaP6U9CZHKVzjmpy6kJlsPHUrKRCCWqWsH3cTWWNKuw-vTkzPwblMm7giFb--qCb8ScTSY6y3nmg0pkO4yjEZ81nwjYhzDi5sxUwJPaYOfepbc10l-EMpzaVO-vPoPKrRyARxKVh17atGdzZOG84gbuVneKqBd4MmmbN_gjNS9waayhvu6UQ6Owc6kDEgAnYEkti-sDx9Y7FLmkacOeAwon4bD2-WdnCuzB-6kCcoScd8d-CCwqCtCnN1ECS6gJpWKoxkS8dsGa-yHml9o7wOqQQy0IXslcJMQrhOOLqaU25yYy0sJXVn5MhRWph2ji5Ym0WwIRjPr1kj41wUuZpa_V-ioStXdN-8fB6XG7SIoZlVyUq5hBQY2PYxHg3VIkMbpEEeYrMoEcgK6ja3h00mi0_agVY6_YSvQReMwiwbjzi-o7MkM_piHGc2OT1oLD2EhrKT-rScbN99KtUnbNTwlyMMRKSEjTbZPa1d-S0OBCOtz-Tc-plBqMz0udEvfRftmclyU3KgORY6X0pH0Q7hIelK8geGcWk1AqDNlI8OTC7KRDTS_s-BviYHPnKW1OVXBhF_oVkiVcwabn1DeYw2qL3_AU/w140-h140-p/2020-09-03.png');
+
+    height: 455px;
+    width: 455px;
+    border: 4px solid red;
+    /*background-repeat: repeat-x; it will repeat the image on just the x axis*/
+    /*background-repeat: repeat-y; it will repeat the image on just the y axis*/
+    background-repeat: no-repeat;/*this will not repeat the image at all*/
+    
+    /*background position sets the position of the background image*/
+    /* the position can be set in the following values: pixels, center, top,  bottom, right and left */
+    /* syntax: background-position: x position, y position; */
+    /*background-position: center center;/*set the image in the exact center of the box*/
+    /* background-position: 45px 100px;/*sets the position of the image according to the distance from x and y axis */
+    /* background-position: center left;/*sets image to the center left */
+    /* background-position: center right; */
+    /* background-position: top left; */
+    /* the x coordinate has there values: center, right and left */
+    /* the y coordinate has three values: center, bottom and top */
+    /* but there is no hard and fast rule that they can use these values only... they can also use each other's values but the result would be the same as it would have been using their own values */
+}

@@ -1,0 +1,36 @@
+/*there are two types of fonts:
+ 1)Web safe fonts: they are the fonts that are preinstalled on the operating system and never give an error when they are used
+ 2)Web fonts: they are the fonts which are not preinstalled into the computer and they need to be installed on the computer from the web to use them
+
+ font family is a family of fonts which have number of fonts under them
+
+ font stack is an element in which a number of fonts are mentioned... if the first font in the list then the second will be used and so on
+
+ to see the web safe fonts, visit https://www.cssfontstack.com/
+
+ to get web fonts visit https://fonts.google.com/
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Syne+Tactile&display=swap');/*heading font*/
+ @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap');
+ /*these are imported fonts*/
+
+ p{
+   font-family: 'Syne Tactile', cursive;
+   font-size: 13px;/*a pixel is 1/96th of an inch*/
+   line-height: 1.3em;
+   /* line height are the margins above and below the font */
+   /* em is a unit to calculate line height... it is the size multiplied to the actual size of the font's parent font  */
+ }
+
+ h3{
+   font-family: 'Caveat', cursive;
+ }
+
+ span{
+   font-family: 'Syne Tactile', cursive;
+   font-weight: bold;
+   /* font weight is the weight of the font... it could be bold or anything else */
+   font-style: italic;
+   /* it is the style of the font */
+ }

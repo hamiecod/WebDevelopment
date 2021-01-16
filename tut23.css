@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&family=Josefin+Sans:wght@200&display=swap');
+
+body{
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+.navbar{
+    background-color: rgb(238, 220, 220);
+    border-radius: 18px;
+}
+
+.navbar li/*the li(s) in the navbar class*/{
+    float: left;/*whenever a float is given the things overflow and the parent collapses*/
+    list-style: none;/*removes the bullets*/
+    margin: 12px 14px;
+
+}
+
+.navbar ul{
+    overflow: auto;/*disables the overflow of the elements and protects the parent from collapsing*/
+}
+
+.navbar li a /*the a tags in li which are in navbar*/{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: maroon;
+}
+
+.navbar li a:hover{
+    color: orangered;
+    cursor: pointer;
+}
+
+.search{
+    float: right;
+    margin: 11px 1px;
+    padding: 1px 51px;
+}
+
+.navbar input{
+    padding: 2px;
+    border-radius: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 152px;
+    height: 14px;
+    color: rgb(218, 77, 101);
+    font-weight: bold;
+}

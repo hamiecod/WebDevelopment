@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body></body>
+    <h2>HTML Forms</h2>
+    <form action="backend.php"><!--It makes a form in which we can input data-->
+        <!-- action is a form attribute whose function is to specify the server side document where the inputted data will be stored -->
+        <div><!--It makes a division in a form so the whole line would be covered by a single division-->
+            <label for="name">Name</label><!--Label holds a value for a particular id-->
+            <input type="text" name="myName" id="name"><!--'id' is used to give a keyword to an input tag so that it can be recognised by the label tag-->
+            <!--the input type is simple text... the name is the label by which it would be classified in the backend file-->
+            <!-- another feature of the label tag is that even if we click the text stored in it instead of the input area, it will still get active -->
+        </div>
+        <br><!--br tag is used to make it look beautiful..... it is not recommended as it is the work of CSS-->
+
+        <div>
+            <label for="role">Role</label><!--'role' is the id and "Role" is the text stored in the label which would be displayed wherever there is 'role' id-->
+            <input type="Role" name="myRole" id="role"><!--myRole is a particular keyword that would guide the input to the server end file-->
+            <!-- 'role' id will trigger the label containing the name
+            even if the title of the input would be clicked the box would become active -->
+        </div>
+        <br>
+        
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="myEmail" id="email"><!--the input is of the email of the inputter-->
+        </div>
+        <br>
+
+        <div>
+            <label for="bday">Date of Birth</label>
+            <input type="date" name="myBday"><!--the type 'date' would generate a calender to choose the date from-->
+        </div>
+        <br>
+        
+        <div>
+            <label for="bonus">Bonus</label>
+            <input type="number" name="myBonus" id="bonus"><!--Only a number can be inputted in this case-->
+        </div>
+        <br>
+        
+        <div>
+            <label for="eligibility">Are you eligible?</label>
+            <input type="checkbox" name="myEligibility" id="eligibility" checked><!--this is a checkbox form of input which can either be true(checked) or false(unchecked)-->
+            <!-- the 'checked' attribute of the tag automatically checks the box -->
+        </div>
+        <br>
+        
+        <div>
+            <label for="gender"></label>
+            <!-- it is a type of radio button input in which, there are multiple options and only one can be chosen from them -->
+            Gender:<input type="radio" name="myGender" id="gender" checked>Male <!--the checked attribute automatically checks the option-->
+            <input type="radio" name="myGender">Female<!--multiple input tags are used in case of radio button input-->
+            <input type="radio" name="myGender">Others
+        </div>
+        <br>
+        
+        <div>
+            <label for="aboutme">Write something about yourself</label>
+            <br><!--textarea is an area used for writing long paragraphs-->
+            <textarea name="text" id="aboutme" cols="90" rows="10"></textarea><!--the cols(columns) and rows attribute specify the dimensions of the text area-->
+        </div>
+        <br>
+        
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car"><!--It is a type of a dropdown input-->
+                <option value="indica">Indica</option><!--each option mentioned inbetween the option tags must have a value assigned to them to make it easier for the server to understand-->
+                <option value="etios">Etios</option>
+                <option value="swift" selected>Swift</option><!--the 'selected' attribute is used to automatically select the option-->
+                <option value="skoda">Skoda</option>
+            </select>
+        </div>
+        <br>
+        
+        <div>
+            <input type="submit" value="Submit Now"><!--this type of input is used to submit the data to the server-->
+            <input type="reset" value="Reset Now"><!--this type of input is used to reset the form to default-->
+        </div>
+        <br>
+        
+    </form>
+</body>
+</html>

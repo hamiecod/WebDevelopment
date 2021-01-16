@@ -1,0 +1,37 @@
+/* this code just contains notes */
+/* html is the structure of the websetie which can be related to the skeleton of the human body */
+/* CSS is beauty it is used to make the website beautiful and modern */
+/* CSS also makes the website responsive */
+/* Css makes the website responsive as when the website is opened in a laptop it will adjust it according to the screen, and when the website is opened on a mobile the website will adjust it accordingly */
+
+/*the syntax of CSS is as follows:
+selector={property:value;}
+p={color=red;}
+p is the selector... selector is the tag to which the properties and the CSS needs to be applied
+color is the property... property is the thing which needs to be changed
+red is the value... value is the value of the selected property
+the code reads: change the color of all the paragraphs of the webpage to red
+
+if we want to change the property of the selector of a particular id or class the following syntax is used:
+selector.class{property:value;}= p.container{color.blue;}
+selector#id{property:value;}= p.mainBox{color.orange;}
+
+using multiple selectors:
+selector1, selector2.class{
+    property:value;
+    property:value;
+}
+
+there are 3 ways in which CSS can be embedded in a website:
+1. Using inline CSS: It means including CSS in the tag itself as an attribute of the tag
+for example: the styles for the paragraph tag are included in it like its attributes= <p style="border: 2px solid red;"></p>
+
+2. Using internal CSS: It means inculuding the CSS in the style tag placed in the head
+for example: <head><style></style></head>
+
+3. Using external CSS: it means reffering to separate CSS file:
+<link rel="stylesheet" href="hargun.css">
+
+the first two make the code messy whereas the 3rd is the most preffered
+
+in some cases, we can also use styling attributes in HTML like height and width of the image tag... but they should not be used in HTML as styling is the work of CSS

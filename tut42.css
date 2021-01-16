@@ -1,0 +1,36 @@
+body{
+    font-family: goldman;
+    color: purple;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 3rem;
+    /* sets gap in x direction */
+    grid-row-gap: 1rem;
+    /* sets gap in y direction */
+}
+
+.box{
+    background-color: rgb(255, 228, 255);
+    border: 2px solid purple;
+    padding: 23px;
+    text-align: center;
+}
+
+.box:nth-child(1){
+    /* These properties span the element, spans means to stretch */
+    grid-column-start: 1;
+    /* This is at the starting of the page meaning that before the first element, so second before second element, so by default a box is in between 1 and 2 */
+    grid-column-end: 3;
+    /* This will stretch the element equivalent to 2 elements */
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /* both of them have shorthands */
+    grid-column: 1/ span 3;
+    /* syntax: grid-column: startingPoint / span number of elements equivalent to the space spanned(different from grid-column-end); */
+    /* The same things apply to grid-row */
+    grid-row: 1/ span 3;
+}

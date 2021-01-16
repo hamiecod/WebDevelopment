@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Entities</title>
+</head>
+<body>
+    <!-- there are some reserved symbols in HTML like the angular brackets(<>) -->
+    <!-- if we write them, VS code will consider them code and not text -->
+    <!-- to write those reserved symbols and other symbols that are not available on the keyboard, we use entities -->
+    <!-- entities are a specific code -->
+    <!-- to make VS code understand them as code we put a semicolon after them -->
+
+    <div class="container">
+        <p>This is a           paragraph</p>
+        <!-- in this case, VS code considers just one space no matter how many spaces you write in the code -->
+        <!-- to encounter this problem we use entities -->
+    </div>
+    
+    <div class="container">
+        <!-- the following code: '&nbsp;' is used to get an extra space -->
+        <p>This is another &nbsp;&nbsp;paragraph</p>
+        <hr>
+    </div>
+
+    <div class="container">
+        <p>we write a paragraph is HTML by <p> tag</p>
+        <!-- VS code will always take the square bracketed text as HTML code, so we need to use an entity to get rid of it -->
+        <p>we write a paragraph in HTML by &lt;p&gt;</p>
+        <!-- '&lt;' is the code for opening square brackets -->
+        <!-- '&gt;' is the code for closing square brackets -->
+        <hr>
+    </div>
+    <div class="container">
+        <!-- we do not have the pound/euro symbol on the keyboard so we can write it using a HTML entity -->
+        <!-- '&pound;' is the HTML entity for pound symbol -->
+        <span>the symbol of pound is &pound;</span>
+        <hr>
+    </div>
+    <div class="container">
+        <!-- there is no copyright symbol key on the keyboard, so we can write it using HTML entity -->
+        <!-- the HTML entity for copyright is '&copy;' -->
+        <span>Copyright is written like &nbsp;&copy;</span>
+        <hr>
+    </div>
+    <div class="container">
+        <!-- empty character is a character which has no character, its invisible -->
+        <!-- the code for empty character is '&#8203' -->
+        <!-- you can copy it and send to anyone -->
+        <span>Empty element is written as &#8203</span>
+    </div>
+
+    <!-- to get the list of all entities, you may refer to google -->
+
+</body>
+</html>

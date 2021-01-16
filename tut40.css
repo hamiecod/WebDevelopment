@@ -1,0 +1,23 @@
+.container{
+    display: grid;
+    /* when a container becomes a grid, all its children become grid items */
+    grid-template-columns: 300px 100px 100px;
+    /* This code make n number of columns of specified widths */
+    /* syntax: grid-template-columns: width1 width2 width3; */
+    grid-template-columns: 300px auto 100px;
+    /* auto sets the width to automatic.... automatic takes all the space available or divides the space into equal parts */
+    grid-template-columns: 1fr 4fr 1fr;
+    /* fr stands for fraction of the total */
+    /* it forms a ratio, in this case- 1:4:1 */
+    grid-template-columns: repeat(3, auto);
+    /* syntax: grid-template-columns: repeat(number of repetitions, width);
+    This repeat repeats the column width n number of times */
+    grid-gap: 2rem;
+    /* gap is margin in between grid */
+}
+
+.item{
+    background-color: rgb(255, 235, 235);
+    border: 2px solid red;
+    padding: 2px;
+}

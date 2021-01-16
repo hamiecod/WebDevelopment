@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road&display=swap');
+
+/* inline element means that the element would cover only the space in which it fits */
+/* block element would cover the whole line, we can set its width and also center it using 'margin:auto' */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Turret Road', cursive;
+}
+
+img{
+    width: 34px;
+    margin: auto;/*It will not center because it is inline and not block*/
+    display: block;/*makes it a block element*/
+}
+
+header{
+    margin: auto;
+    width: 1200px;/*all the things will still be centered if the width is more because the elements are also centered separately */
+    border: 2px solid red;
+}
+
+h3{
+    text-align: center;
+    margin: 0px;
+}
+
+.box{
+    border: 4px solid black;
+    background-color: rgb(141, 133, 133);
+    margin: 4px 0px;/*margin is 0 because of centering the boxes*/
+    padding:23px;
+    /* task is to get all blocks in one line */
+    /*display: inline;if it is done then the blocks will overflow the parent*/
+    /* display:block;in this only one box will come in one line */
+    display: inline-block;/*this is valid as it also allows to set width and multiple elements in one line*/
+    width: 32.95%;
+    box-sizing: border-box;/* it stops padding and margin to manipulate width */
+    text-align: center;
+}
+
+.container{
+    margin: auto;
+    /* display: inline-block; */
+    width: 1200px;/*same width as header*/
+    box-sizing: border-box;
+    /* we will not do container as inline-block then it would not center */
+}

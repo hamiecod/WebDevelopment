@@ -1,0 +1,16 @@
+#firstPara{
+    color: red;/* the color of first paragraph is defined by the color name*/
+}
+
+#secondPara{
+    color: rgb(121, 212, 118);/*it is the rgb color code for defining the color, the color formed is the mixture of red, green and blue colors using numbers as their value... the maximum number can be 255*/
+}
+
+#thirdPara{
+    color: #f500a3;/*this is a hexadecimal code to define colors... you can get the hex code for a color on any website or a color picker*/
+    /* this is hexadecimal equivalent of the rgb code... the first two letters are values for red, the third and fourth are values for green, and the last two are value for blue */
+    /* here, 'f5' stands for red value, '00' for green value, 'a3' for blue value */
+
+    background-color: rgb(3, 247, 194)/*color by name*/
+    /* the color names, rgb values and hex values are same in whole CSS */
+}

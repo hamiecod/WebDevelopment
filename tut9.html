@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and block elements</title>
+</head>
+<body>
+    <!-- block elements are those which cover the whole line in which they are placed -->
+    <!-- inline elements are those which just cover the area which is covered by the text in them -->
+
+    <!-- border tag is not yet explained, here it is just used to understand the concept of inline and block elements -->
+    <p style="border: 2px solid red;">This is a paragraph</p>
+    <!-- here, the paragraph tag covers the whole line and thus the other paragraph tag has to shift to the other line -->
+    <p style="border: 2px solid blue;">this is also a paragraph</p>
+    <!-- paragraph is a block element -->
+
+    <!-- span element just covers the area covered by the text -->
+    <!-- the span element just covers the area by text and thus the other span element is written just after it -->
+    <span style="border: 2px solid red;">this is a span</span>
+    <span style="border: 2px solid blue;">this is also a span</span>
+    <!-- therefore, span is an inline element -->
+    <hr color="green"><!--this is a block element as it covers the whole line-->
+    <hr color="green">
+
+    <strong style="border: 2px solid red;">this is a strong tag</strong>
+    <!--it is an inline element as due to the first tag the second did not have to shift to the next line-->
+    <strong style="border: 2px solid blue;">this is also a strong tag</strong>
+
+    <hr color="pink">
+    <hr color="pink">
+
+    <!-- the anchor tag is an inline element as it did not push the another anchor tag down -->
+    <a  target="_blank" style="border: 2px solid red;" href="https://instagram.com">Go to instagram</a>
+    <a  target="_blank" style="border: 2px solid blue;" href="https://twitter.com">Go to twitter</a>
+
+    <!-- if you want all the content in one line then you should use inline elements or make block elements inline elements using CSS -->
+
+    <!--Quiz Answers: Classify the elements as block or inline elements:
+    li: block
+    div:block
+    img:inline
+    em: inline
+    -->
+
+    <!-- demonstration of img as inline tag -->
+    <img style="border: 2px red;" src="https://source.unsplash.com/random" width=200 height=70 alt="error 404">
+    <span style="border: 2px blue;">this is a span</span>
+</body>
+</html>

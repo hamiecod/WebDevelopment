@@ -1,0 +1,35 @@
+/* a class can have multiple elements and an element can also have multiple classes */
+/* an element only has one id */
+
+/* this is an element selector in which the changes are applied on each element of that type even if it is in div tag */
+p{
+    color:red
+}
+
+/* it means selecting and targetting the element have the id 'redElement'... the id is represented by a pound symbol '#' */
+/* it would not act if there is no such id */ 
+/* it is an id selector */
+#firstPara{
+    color: purple;
+    border: 2px solid  yellow;
+}
+
+/* it means selecting and targetting each and every element having the class 'secondPara' */
+/* the class is represented by a point '.' */
+/* it is a class selector */
+.diffElement{
+    color:pink;
+    border: 2px solid green;
+}
+
+/* 'bgblue' is a class as it is represented by a dot(.) */
+/* it is class selector */
+.bgblue{
+    background-color: blue;
+}
+
+/* it means selecting and targeting each and every footer and span element */
+/* it is a grouping selector */
+footer, span{
+    background-color:pink;
+}

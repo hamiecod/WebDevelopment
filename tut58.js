@@ -47,13 +47,21 @@ function greet(name1, byeText="Goodbye"){
 // in setInterval too you can give a already made function or create a funtion in it
 // you can give the parameters for the function in the third, fourth.,.,. and so on arguements, the third will be the first parameter and so on
 // it also calculates the time in milliseconds
-intervalId = setInterval(greet, 1000, "Hargun", "Good Night");
+// intervalId = setInterval(greet, 1000, "Hargun", "Good Night");
 // the setInterval will still run even if it is assigned to a variable
 // setInterval also returns a unique id of itself
 // the unique id will also count the setTimeouts
 // if a settimeout has id 1, then setInterval which is after it has id 2
 // it will repeat the same function after the specific time has passed
-console.log(intervalId);
+// console.log(intervalId);
 // there is clearInterval which performs the same functions as of clearTimeout
 // you also have to supply the unique id as a parameter of clearInterval
-clearInterval(intervalId);
+// clearInterval(intervalId);
+
+// making a clock using the things we learnt in this tutorial
+function displayTime(){
+    time = new Date();
+    console.log(time);
+    document.getElementById('time').innerHTML = time;
+}
+setInterval(displayTime, 1000);

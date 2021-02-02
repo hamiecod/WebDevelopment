@@ -1,0 +1,36 @@
+html{
+    font-family: Poppins;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#btn{
+    background-color: rgb(255, 0, 0);
+    padding: 7px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-family: inherit;
+    width: 100px;
+    display: block;
+    margin: 10px auto;
+    transition-property: all;
+    transition-duration:0.8s;
+}
+
+#btn:hover{
+    transform: scale(1.15);
+    background-color: rgb(253, 234, 234);
+    color: red;
+}
+
+#btn:focus{
+    outline: none;
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+/* Yusei Magic font */
+
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-family: "ahabesha'stypewriter" , sans-serif;
+}
+
+main::before{
+    background: url('clock.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* important to declare the height */
+    opacity: 0.84;
+    top: 0px;
+    left: 0px;
+}
+
+#container{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 2.689rem 2rem;
+    align-items: center;
+}
+
+#container *{
+    margin: 0.33rem;
+}

@@ -25,7 +25,12 @@ var substr1 = str.slice(1,6);
 console.log(substr1);
 
 
-substr1 = str.substr(3,4);
+substr1 = str.substr(1,6);
+// substr vs slice:
+// in slice, the substring is one letter smaller from what is specified
+// in substr, the substring is accurate letters as defined
+// like slice will print 'hat i' whereas substr will print 'hat is' with the same values
+
 // it accepts negation values
 // syntax:
 // variable = varvictim.substr(startPoint, length of substring)
@@ -33,7 +38,7 @@ console.log(substr1);
 
 // not to go very deep into substr, substring and slice functions, use any one of them
 
-substr1 = str.substring(2,4)
+substr1 = str.substring(1,6)
 // substring function is exactly similar to slice
 console.log(substr1);
 

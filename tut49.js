@@ -28,7 +28,7 @@ console.log(`The length of name is ${len}`);
 
 console.log(`Hello World\nHargun\tAman`);
 // '\n' is an escape sequence it represents new line
-// '\t' escape sequence means space
+// '\t' escape sequence means space which is more than the space we get by spacebar
 // if you want to write '\n' normally that you will have to precede it with two backslashes
 
 var y = new String("this");

@@ -68,7 +68,7 @@ num1 =3;
 // reseting the value
 
 console.log("The value of decremented num1 is " + (num1--));
-// it will show that the value of num1 is 3 only which is actually the original valu decremented value is not shown because it is decremented after it has been written in the console log
+// it will show that the value of num1 is 3 only... which is actually the original value decremented value is not shown because it is decremented after it has been written in the console log
 
-// now in the command below, JS would show that the decremented value is 5 which rather should be 4 according to us..... it is 5 because in the last command we decremented the value after it was written in the console... so technically num1 has been decremented twice 
+// now in the command below, JS would show that the decremented value is 1 which rather should be 2 according to us..... it is 1 because in the last command we decremented the value after it was written in the console... so technically num1 has been decremented twice 
 console.log("The value of incremented num1 is " + (--num1));

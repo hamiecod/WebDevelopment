@@ -40,7 +40,7 @@ console.log(employee["channel 2"]);
 // an array is also a type of an object
 // an object can contain different types of data types
 let names = [41, 2, 4, "hargun", undefined, true, null,];
-// SyntaxError(es) of array:
+// Syntax(es) of array:
 // let nameofArray = [value1, value2];
 // let nameofArray = new Array(value1, value2);
 // console.log(names);
@@ -69,3 +69,13 @@ console.log(names);
 // let nameofArray = new Array(n);
 let cars = new Array(23);
 console.log(cars);
+
+console.log(Object.keys(employee).length);
+// the above calculates the length of the object
+// first we get the key names by `Object.keys(objectName)` in the form of an array and then we can simply write the code to calculate the length of the array
+
+employee.post = "Senior Engineer";
+// the above adds a key and value pair to an object
+// objectName.key = "value";
+
+console.log(employee);

@@ -30,7 +30,7 @@ const fixed = "This cannot be changed";
 console.log(fixed);
 
 // !-----IF ELSE CONDITIONS-----!
-let age = 1;
+let age = 10;
 
 // syntax for if-else:
 /*

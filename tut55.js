@@ -19,15 +19,15 @@ for(varInit; condtion; updation){
 // first the init runs, then the condition and the the updation
 
 let friends = ["Rohan", "Ram", "Shyam", "Deepti", "Pooja"];
-// for (let index = 0; index < friends.length; index++) {
-//     console.log("Hello friend, " + friends[index]);
-// }
+for (let index = 0; index < friends.length; index++) {
+    console.log("Hello friend, " + friends[index]);
+}
 
 // forEach is used in modern js
 // forEach runs the function inside it for every element inside an array without even calling out the function after it is declared
-// friends.forEach(function f(element){
-//     console.log("Hello " + element + " to modern JavaScript");
-// })
+friends.forEach(function f(element){
+    console.log("Hello " + element + " to modern JavaScript");
+})
 
 // !---for of loop----!
 // for of loop also runs for each of the value of an array
@@ -75,5 +75,5 @@ let j = 25;
 do{
     console.log(`${j} is less than 4 and we are inside do while loop`);
 }while(j<4);
-// the difference between while and do while loop is that do while loop runs the commands before checking the conditions, it runs the commands for once and then realises 
+// the difference between while and do while loop is that do while loop runs the commands once before checking the conditions, it runs the commands for once and then realises 
 document.getElementById("container").innerHTML="This is an injection by JavaScript";

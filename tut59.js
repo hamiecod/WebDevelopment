@@ -28,6 +28,9 @@ console.log(newDate);
 // function of date
 let yr = newDate.getFullYear();
 // the above function just gives the year in a particular date
+// getFullYear vs getYear
+// getFullYear gives the exact year in the date
+// getYear gives the year by subtracting 1900 from the year in the date
 console.log(`The year is `, yr);
 
 let month = newDate.getMonth();

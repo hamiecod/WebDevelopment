@@ -3,7 +3,8 @@ let m = Math;
 console.log(m);
 
 // Printing the constants from Math Object
-console.log("The value of Math.E is ", m.E);
+// `m` is the shorthand for `Math`
+console.log("The value of Math.E is ", Math.E);
 console.log("The value of Math.LN2 is ", m.LN2);
 console.log("The value of Math.LN10 is ", m.LN10);
 console.log("The value of Math.LOG2E is ", m.LOG2E);
@@ -59,11 +60,11 @@ console.log("The random number is ", r);
 
 // if you want to create a random generator between 1 and 100
 // let r1_100 = min + (max-min)*Math.random();
-let min = 1;
+let min = 10;
 let max = 100;
 let r1_100 = min + (max-min)*Math.random();
 // above given is the formula to get a random number between 1 and 100
-// it just multiplies the 
+// it just multiplies the the the random number between 0 and 1 with the difference between maximum and minimum and then adds the minimum to it so that the value is not faulty and not below the minimum value
 console.log(`The random number is `, Math.round(r1_100));
 
 let x = 4;

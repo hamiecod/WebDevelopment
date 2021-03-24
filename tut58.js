@@ -8,7 +8,7 @@ function greet(name1, byeText="Goodbye"){
 }
 
 // the syntax of setTimeout is as follows:
-// setTimeout(fucntion(){
+// setTimeout(function(){
     
 // }, timeout, "input for function(if any)", "second input for function(if any)");
 // the timeout is measured in milliseconds; 1 second = 1000 milliseconds
@@ -27,8 +27,8 @@ function greet(name1, byeText="Goodbye"){
 // setTimeout returns a unique id which is assigned to it
 // setTimeout can be cleared by clearTimeout..... it is cleared when the unique id of setTimeout is given to clearTimeout
 
-// timeOut = setTimeout(greet, 5000, "Hargun", "Take Care");
-// console.log(timeOut);
+timeOut = setTimeout(greet, 5000, "Hargun", "Take Care");
+console.log(timeOut);
 
 // now as shown in the developer console, the unique id of the specific setTimeout is 1 so we can clear it by using its id or the variable in which the unique id is stored
 // the syntax of clearTimeout is:

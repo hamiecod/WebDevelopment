@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body{
+            font-family: 'Poppins';
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+        }
+        ul{
+            display: flex;
+        }
+        li{
+            font-weight: bold;
+            list-style: none;            
+            margin: 10px 23px;
+            transition-property: all;
+            border-radius: 22px;
+            transition-duration: 0.8s;
+        }
+        li:hover{
+            transform: scale(1.44);
+        }
+        a{
+            text-decoration: none;
+            color: rgb(252, 186, 186);
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="item"><a href='/home'>Home</a></li>
+            <li class="item"><a href='/about'>About</a></li>
+            <li class="item"><a href='/services'>Services</a></li>
+            <li class="item"><a href='/contact'>Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h3>This is about page</h3>
+    </div>
+</body>
+</html>

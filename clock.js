@@ -1,5 +1,5 @@
 let fulldate = document.getElementById('fulldate');
-let time = document.getElementById('time')
+let time = document.getElementById('time');
 
 function updateTime(){
     let date = new Date();

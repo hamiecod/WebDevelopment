@@ -1,10 +1,26 @@
 const express = require('express');
 // importing express module
+const path = require('path');
+// importing path module
 const app = express();
 // initialized 'app' variable as an express app
 const port = 80;
 // initialising a variable to hold the value of the port
 // port 80 is recommmended because this will work also if the port is not specified explicitly
+
+// used for serving static files
+app.use('/static', express.static('static'));
+
+// set the template engine as pug
+app.set('view engine', 'pug');
+
+// set the view directory
+app.set('views', path.join(__dirname, 'views'));
+
+// our pug demo endpoint
+app.get("/demo", (req,res)=>{
+    res.status(200).render('demo.pug', {title: 'Hey Hargun', message: 'Hello there and thanks for teaching me how to write backend code using node.js!'});
+});
 
 // app.get is an HTTP method
 // when 'get' method is hit on the first paramater end point it will return res.send

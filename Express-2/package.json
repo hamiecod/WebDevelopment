@@ -1,0 +1,24 @@
+{
+  "name": "express-2",
+  "version": "1.0.0",
+  "description": "this is an express package in which we also learn to use pug template engine",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u001b[3"
+  },
+  "keywords": [
+    "express",
+    "pug"
+  ],
+  "author": "Hargunbeer Singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "pug": "^3.0.2"
+  }
+}

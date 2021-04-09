@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+    style
+        include ../static/main.css
+</head>
+<body>
+    <!-- Tutorial code ↓ -->
+    <!-- <h2>This is a heading</h2> -->
+    | <!-- we are using the pug template engine to write plain HTML -->
+    <!-- <p> -->
+        | <!-- it will work fine if you write the content in the same line in which the tag start but if you write plain html in new lines which do not have HTML tags -->
+        | <!-- but to do so you need to prefix the HTML line with the pipe character -->
+        | <!-- you need to follow a proper syntax to use a variable in the pub engine rendering simple HTML -->
+        | <!-- syntax for the above:
+        #{varName} -->
+        | <!-- plain HTML will work in the pug template engine without even prefixing the line with the pipe character in newer versions of pug but it is greatly recommended that you prefix plain HTML with a pipe character while  -->
+        <!-- | #{content} -->
+        <!-- | you even need to prefix the comments with the pipe character -->
+        | <!-- We are writing plain HTML using Pug -->
+    <!-- </p> -->
+
+
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-list-item"><a class="nav-list-link" href="/">Home</a></li>
+            <li class="nav-list-item"><a class="nav-list-link" href="/">About</a></li>
+            <li class="nav-list-item"><a class="nav-list-link" href="/">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="form-container">
+        <h2>Get this gym membership now for $60</h2>
+        <form action="">
+            <input autocomplete="off" type="text" name="Name" placeholder="Enter your name" class="form-container-prompt">
+            <input autocomplete="off" type="text" name="Age" placeholder="Enter your age" class="form-container-prompt">
+            <input autocomplete="off" type="text" name="Gender" placeholder="Enter your gender" class="form-container-prompt">
+            <textarea name="Address" cols="30" rows="6" placeholder="Enter your address" class="form-container-prompt"></textarea>
+            <textarea name="more" cols="30" rows="6" placeholder="More about you" class="form-container-prompt"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <img src="/static/" alt="">
+</body>
+</html>

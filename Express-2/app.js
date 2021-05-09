@@ -1,12 +1,11 @@
 // variables
 const express = require('express');
-const { fstat } = require('fs');
+const fs  = require('fs');
 // importing express module
 const path = require('path');
 // importing path module
 const app = express();
 // initialising the variable app as an express app
-const fs = require('fs');
 const port = 80;
 
 // EXPRESS SPECIFIC CONFIGURATIONS

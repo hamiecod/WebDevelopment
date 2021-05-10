@@ -2,6 +2,8 @@ database: it is the database where all the data are stored
 collection: It is just like a workbook in excel
 document: it is just like a row in excel
 
+// in mongo db we do not need to follow any schema as we do in MySQL, in mysql all the documents need to have the same keys, but in mongodb we do not need to follow any schema and documents can have non-matching keys
+
 // setup of mongodb
 in C:/ mkae a directory called data and another directory inside data called db
 make a path in This pc properties> environment variable for mongo db with the following file address:
